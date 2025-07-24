@@ -17,11 +17,24 @@
   background-color: #f5f8ff;
 }
 
-/* shared style */
+/* Common style */
 
 .container {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+.section-title {
+  font-family: "Noto Serif";
+  font-size: 3.125rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.375rem;
+  margin-bottom: 20px;
 }
 
 /* header section */
@@ -85,16 +98,103 @@
   margin-bottom: 15px;
 }
 
-.banner-title span {
+.banner-title span,
+.section-title span {
   color: rgb(233, 90, 8);
-}
-
-.banner-description {
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 1.375rem;
 }
 
 /* .banner-right img {
   width: 100%;
   height: 355px;
 } */
+
+/* Plants section */
+.plants {
+  text-align: center;
+  margin: 100px auto;
+}
+
+.plants .section-description {
+  max-width: 888px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);
+  /* width: 270px; */
+}
+
+.card h3,
+.card p {
+  font-size: 1.375rem;
+  color: rgb(17, 17, 17);
+}
+
+.card h3 {
+  font-weight: 500;
+  margin: 30px 0 20px;
+}
+
+.card p {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.btn {
+  color: #fff;
+  font-family: "Inter";
+  font-weight: 600;
+  background-color: rgb(233, 90, 8);
+  padding: 20px 50px;
+  width: 100%;
+  border: 2px solid rgb(233, 90, 8);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: transparent;
+  color: rgb(233, 90, 8);
+}
+
+/* Plants lover section */
+.plants-lover {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin: 150px auto;
+}
+
+.plants-lover-left {
+  position: relative;
+}
+
+.flower-store {
+  width: 100%;
+  /* max-width: 540px; */
+}
+
+.badge {
+  position: absolute;
+  background: transparent;
+  width: 286px;
+  height: 286px;
+  right: -95px;
+  top: -120px;
+  /* box-shadow: -4px 10px 4px 0px rgba(0, 0, 0, 0.25); */
+}
+
+.plants-lover-right {
+  max-width: 540px;
+}
+
+.plants-lover-right ul {
+  padding-left: 35px;
+}
