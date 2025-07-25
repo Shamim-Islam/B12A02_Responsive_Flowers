@@ -334,10 +334,30 @@ input {
 }
 
 .footer-logo {
-  /* flex: 1; */
+  flex: 1;
   max-width: 30%;
 }
 
 .footer-logo img {
   margin-bottom: 20px;
+}
+
+.footer-links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  /* justify-content: space-between; */
+  list-style: none;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: rgb(107, 114, 128);
+}
+
+.icons {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+  align-items: center;
 }
