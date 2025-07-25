@@ -118,7 +118,7 @@ body {
 }
 
 .plants .section-description {
-  max-width: 888px;
+  max-width: 75%;
   margin: auto;
   margin-bottom: 50px;
 }
@@ -126,7 +126,7 @@ body {
 .card-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 20px;
 }
 
 .card {
@@ -181,8 +181,8 @@ body {
 }
 
 .flower-store {
-  width: 100%;
-  /* max-width: 540px; */
+  max-width: 100%;
+  display: block;
 }
 
 .badge {
@@ -196,7 +196,8 @@ body {
 }
 
 .plants-lover-right {
-  max-width: 540px;
+  /* max-width: 540px; */
+  max-width: 45%;
 }
 
 .plants-lover-right ul {
@@ -209,10 +210,15 @@ body {
   text-align: center;
 }
 
-.plants-container {
+.latest-deals .section-description {
+  max-width: 75%;
+  margin: auto;
+}
+
+.plants-card-container {
   display: flex;
   gap: 20px;
-  margin: auto;
+  margin: 120px auto;
 }
 
 .deals-left {
@@ -226,7 +232,6 @@ body {
   position: relative;
   border-radius: 12px;
   overflow: hidden;
-  /* color: #fff; */
 }
 
 .deals-right {
@@ -240,6 +245,13 @@ body {
   display: block;
 }
 
+.dark-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
 .overtxt {
   position: absolute;
   top: 50%;
@@ -247,6 +259,8 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
+  z-index: 2;
+  width: 100%;
 }
 
 .overtxt h3 {
@@ -261,4 +275,69 @@ body {
   padding: 6px 12px;
   font-weight: 600;
   color: #fff;
+}
+
+.right-card .overtxt h3 {
+  font-size: 2.5rem;
+}
+
+.right-card .overtxt a {
+  font-size: 1.75rem;
+}
+
+/* Join section */
+
+.join {
+  background-image: url("../assets/news-letter-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.join-content {
+  text-align: center;
+}
+
+.join-content h1 {
+  font-size: 3.125rem;
+  font-weight: 700;
+  font-family: "Noto Serif";
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.input-container {
+  display: flex;
+}
+
+input {
+  width: 644px;
+  padding-left: 20px;
+  outline: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+.input-container > .btn {
+  width: 20%;
+}
+
+/* footer section */
+
+.footer-content {
+  margin: 50px auto;
+  display: flex;
+  gap: 110px;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  /* flex: 1; */
+  max-width: 30%;
+}
+
+.footer-logo img {
+  margin-bottom: 20px;
 }
